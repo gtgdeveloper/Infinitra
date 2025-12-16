@@ -1,5 +1,5 @@
 {
-  "name": "avvenire-na-map",
+  "name": "infinitra-ai-demo",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "leaflet": "^1.9.4",
-    "lucide-react": "^0.469.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-leaflet": "^4.2.1"

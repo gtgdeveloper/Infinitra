@@ -3,22 +3,18 @@ import type { Site } from "./NorthAmericaMap";
 import type { EventItem } from "./events";
 import { makeEvent } from "./events";
 
-type FeedOptions = {
-  maxItems?: number;
-  tickMs?: number;
-};
+type FeedOptions = { maxItems?: number; tickMs?: number; };
 
 export function useEventFeed(sites: Site[], opts: FeedOptions = {}) {
-  const maxItems = opts.maxItems ?? 80;
-  const tickMs = opts.tickMs ?? 1100;
+  const maxItems = opts.maxItems ?? 120;
+  const tickMs = opts.tickMs ?? 900;
 
   const sitesRef = useRef(sites);
   useEffect(() => { sitesRef.current = sites; }, [sites]);
 
   const [items, setItems] = useState<EventItem[]>(() => {
     const now = Date.now();
-    // seed with a few
-    return sites.slice(0, Math.min(6, sites.length)).map((s, i) => makeEvent(s, now - (6 - i) * 1500));
+    return sites.slice(0, 8).map((s, i) => makeEvent(s, now - (8 - i) * 900));
   });
 
   useEffect(() => {
@@ -26,13 +22,8 @@ export function useEventFeed(sites: Site[], opts: FeedOptions = {}) {
       const now = Date.now();
       const s = sitesRef.current[Math.floor(Math.random() * sitesRef.current.length)];
       const ev = makeEvent(s, now);
-
-      setItems((prev) => {
-        const next = [ev, ...prev];
-        return next.slice(0, maxItems);
-      });
+      setItems((prev) => [ev, ...prev].slice(0, maxItems));
     }, tickMs);
-
     return () => clearInterval(id);
   }, [maxItems, tickMs]);
 

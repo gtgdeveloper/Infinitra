@@ -1,10 +1,15 @@
-# INFINITRA AI — Map + Telemetry + Incoming Data Feed (Vite + React + Leaflet)
+# INFINITRA AI — Full Demo (Logo + Icons + 300 Nodes)
 
-Now includes:
-- Avvenire Technologies logo (top-left) linking to https://avveniretech.com
+Includes:
+- Avvenire logo (top-left) linking to https://avveniretech.com
 - Investor button linking to https://avveniretech.com/invest
-- **60 map nodes**: 30 E-bikes, 20 Humanoids, 10 Battery Systems (distributed around hubs)
-- Simulated live telemetry + incoming AI recommendations feed
+- Real basemap (OpenStreetMap)
+- 300 nodes total:
+  - 100 LEVs (Terra E‑Bike / Tectus Scope Mobility / Leggera 3‑Wheel) with human names
+  - 100 Humanoids
+  - 100 Battery Systems
+- Live telemetry panel + incoming AI feed
+- Firmware countdown lines included in every feed message
 
 ## Run locally
 ```bash
@@ -12,13 +17,9 @@ npm install
 npm run dev
 ```
 
-## Production test
-```bash
-npm run build
-npm run preview
-```
+## Deploy on Render (Static Site)
+Build command:
+`npm ci && npm run build`
 
-## Customize
-- Node generation (counts/hubs): `src/components/NorthAmericaMap.tsx`
-- Telemetry simulation: `src/components/telemetry.ts`
-- Incoming feed simulation: `src/components/events.ts` + `src/components/useEventFeed.ts`
+Publish directory:
+`dist`
