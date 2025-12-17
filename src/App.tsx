@@ -44,7 +44,7 @@ export default function App() {
     const n = String(s?.name || "").toLowerCase();
     const hay = `${p} ${n}`;
     if (hay.includes("leggera")) {
-      return Math.random() < 0.5 ? "/leggera1.mov" : "/leggera2.mov";
+      return Math.random() < 0.5 ? "/leggera1.mp4" : "/leggera2.mp4";
     }
     if (hay.includes("tectus") || hay.includes("mobility") || hay.includes("scooter")) {
       return "/tectus1.mp4";
@@ -279,7 +279,7 @@ export default function App() {
 </div>
 
 <div className="caseStudiesGrid">
-  <div className="caseVideoCard">
+  <div className="caseVideoCard" onClick={() => setVideoModal({ src: "/case5.mp4", title: "Medical Assistant", tag: "Case Study" })} role="button" tabIndex={0}>
     <video autoPlay loop muted playsInline>
       <source src="/case5.mp4" type="video/mp4" />
       <source src="/video1.mp4" type="video/mp4" />
@@ -289,7 +289,7 @@ export default function App() {
     </div>
   </div>
 
-  <div className="caseVideoCard">
+  <div className="caseVideoCard" onClick={() => setVideoModal({ src: "/case6.mp4", title: "Personal", tag: "Case Study" })} role="button" tabIndex={0}>
     <video autoPlay loop muted playsInline>
       <source src="/case6.mp4" type="video/mp4" />
       <source src="/video1.mp4" type="video/mp4" />
@@ -299,7 +299,7 @@ export default function App() {
     </div>
   </div>
 
-  <div className="caseVideoCard">
+  <div className="caseVideoCard" onClick={() => setVideoModal({ src: "/case7.mp4", title: "Search and Rescue", tag: "Case Study" })} role="button" tabIndex={0}>
     <video autoPlay loop muted playsInline>
       <source src="/case7.mp4" type="video/mp4" />
       <source src="/video1.mp4" type="video/mp4" />
@@ -309,7 +309,7 @@ export default function App() {
     </div>
   </div>
 
-  <div className="caseVideoCard">
+  <div className="caseVideoCard" onClick={() => setVideoModal({ src: "/case8.mp4", title: "Under the Sea", tag: "Case Study" })} role="button" tabIndex={0}>
     <video autoPlay loop muted playsInline>
       <source src="/case8.mp4" type="video/mp4" />
       <source src="/video1.mp4" type="video/mp4" />
