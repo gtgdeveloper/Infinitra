@@ -236,43 +236,43 @@ export default function App() {
   <div className="caseStudiesTitle">CASE STUDIES</div>
 
   <div className="caseStudiesGrid">
-    <div className="caseVideoCard" onClick={() => setVideoModal({ src: '/case1.mp4', title: 'LEV Fleet', tag: 'Terra • Tectus • Leggera' })}>
+    <div className="caseVideoCard" onClick={() => setVideoModal({ src: '/case1.mp4', title: 'Danger Jobs and Repairs', tag: 'Case Study' })}>
       <video autoPlay loop muted playsInline>
         <source src="/case1.mp4" type="video/mp4" />
         <source src="/video1.mp4" type="video/mp4" />
       </video>
       <div className="caseVideoMeta">
-        <span>Under the Sea</span><span className="caseTag">Case Study</span>
+        <span>Danger Jobs and Repairs</span><span className="caseTag">Case Study</span>
       </div>
     </div>
 
-    <div className="caseVideoCard" onClick={() => setVideoModal({ src: '/case2.mp4', title: 'Battery Systems', tag: 'Peak-shaving • Smart charge' })}>
+    <div className="caseVideoCard" onClick={() => setVideoModal({ src: '/case2.mp4', title: 'Defense Project', tag: 'Case Study' })}>
       <video autoPlay loop muted playsInline>
         <source src="/case2.mp4" type="video/mp4" />
         <source src="/video1.mp4" type="video/mp4" />
       </video>
       <div className="caseVideoMeta">
-        <span>Battery Systems</span><span className="caseTag">Peak-shaving • Smart charge</span>
+        <span>Defense Project</span><span className="caseTag">Peak-shaving • Smart charge</span>
       </div>
     </div>
 
-    <div className="caseVideoCard" onClick={() => setVideoModal({ src: '/case3.mp4', title: 'Humanoids', tag: 'Warehouse • Retail' })}>
+    <div className="caseVideoCard" onClick={() => setVideoModal({ src: '/case3.mp4', title: 'Army', tag: 'Case Study' })}>
       <video autoPlay loop muted playsInline>
         <source src="/case3.mp4" type="video/mp4" />
         <source src="/video1.mp4" type="video/mp4" />
       </video>
       <div className="caseVideoMeta">
-        <span>Humanoids</span><span className="caseTag">Warehouse • Retail</span>
+        <span>Army</span><span className="caseTag">Warehouse • Retail</span>
       </div>
     </div>
 
-    <div className="caseVideoCard" onClick={() => setVideoModal({ src: '/case4.mp4', title: 'Infinitra AI', tag: 'Optimization • Firmware' })}>
+    <div className="caseVideoCard" onClick={() => setVideoModal({ src: '/case4.mp4', title: 'EV & Robot', tag: 'Case Study' })}>
       <video autoPlay loop muted playsInline>
         <source src="/case4.mp4" type="video/mp4" />
         <source src="/video1.mp4" type="video/mp4" />
       </video>
       <div className="caseVideoMeta">
-        <span>Infinitra AI</span><span className="caseTag">Optimization • Firmware</span>
+        <span>EV & Robot</span><span className="caseTag">Optimization • Firmware</span>
       </div>
     </div>
   </div>
@@ -285,7 +285,7 @@ export default function App() {
       <source src="/video1.mp4" type="video/mp4" />
     </video>
     <div className="caseVideoMeta">
-      <span>LEV Operations</span><span className="caseTag">Urban • Fleet</span>
+      <span>Medical Assistant</span><span className="caseTag">Urban • Fleet</span>
     </div>
   </div>
 
@@ -295,7 +295,7 @@ export default function App() {
       <source src="/video1.mp4" type="video/mp4" />
     </video>
     <div className="caseVideoMeta">
-      <span>Battery Grid AI</span><span className="caseTag">Load • Storage</span>
+      <span>Personal</span><span className="caseTag">Load • Storage</span>
     </div>
   </div>
 
@@ -305,7 +305,7 @@ export default function App() {
       <source src="/video1.mp4" type="video/mp4" />
     </video>
     <div className="caseVideoMeta">
-      <span>Humanoid Labor</span><span className="caseTag">Warehouse • Retail</span>
+      <span>Search and Rescue</span><span className="caseTag">Warehouse • Retail</span>
     </div>
   </div>
 
@@ -315,7 +315,7 @@ export default function App() {
       <source src="/video1.mp4" type="video/mp4" />
     </video>
     <div className="caseVideoMeta">
-      <span>Infinitra AI Core</span><span className="caseTag">Optimization • Autonomy</span>
+      <span>Under the Sea</span><span className="caseTag">Optimization • Autonomy</span>
     </div>
   </div>
 </div>
